@@ -29,7 +29,7 @@ function expand_flood_best!(earth_layer, water_layer, water_level)
         for j in (CartesianIndex(-1, 0), CartesianIndex(1, 0), 
                 CartesianIndex(0, -1), CartesianIndex(0, 1))
             neighbor = current_tile + j
-            if !(neighbor ∈ R) continue end
+            if !(neighbor ∈ R)||(water_layer[neighbor]==1) continue end
             if earth_layer[neighbor] <= water_level
                 water_layer[neighbor] = 1
                 push!(water_pile, neighbor)

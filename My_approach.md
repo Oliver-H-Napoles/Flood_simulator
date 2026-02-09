@@ -15,3 +15,8 @@ preciso de uma forma de iterar sobre o mapa em forma de matriz
 
 06/02
 pq caralhos julia adota 1 pra primeira posição do array???
+
+08/02
+ok, fiz o blg pra encher uma matriz de agua de acordo com o terreno em uma forma de breadth first search.
+
+ta exigindo processamento demais ainda. nao consigo rodar com o lubuntu pc

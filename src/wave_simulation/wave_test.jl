@@ -1,8 +1,6 @@
-print("Loading modules...")
 using Plots
 include("apply_mask.jl")
 include("../def_var.jl")
-println("$(E)Modules loaded")
 
 # Generates a matrix with random "hills" using a simple moving average for smoothness
 function generate_earth_layer(rows, cols)
@@ -23,8 +21,9 @@ end
 # Helper to calculate mean without external libraries
 mean(x) = sum(x) / length(x)
 
+#=
 # Visualizes the results
-function visualize_flood(earth_layer, water_layer)
+function visualize_flood_deprecated(earth_layer, water_layer, water_level)
     # Plot the terrain as a heatmap (browns/greens)
     print("Creating heatmap...")
     p = heatmap(earth_layer, c=:terrain, title="Flood Simulation", aspect_ratio=1)
@@ -35,10 +34,12 @@ function visualize_flood(earth_layer, water_layer)
     
     heatmap!(p, water_viz, c=:ice, alpha=0.7, colorbar=false)
     println("$(E)Displaying heatmap")
-    savefig(p, "visualization/$(file_path[6:11])_flood.png")
+    savefig(p, "visualization/flood_at_$(water_level).png")
+
+    
     #display(p)
 end
-
+=#
 
 if abspath(PROGRAM_FILE) == @__FILE__
     rows, cols = 50, 50
@@ -52,6 +53,6 @@ if abspath(PROGRAM_FILE) == @__FILE__
     expand_flood_best!(earth, water, water_level)
 
     # 3. See the results
-    visualize_flood(earth, water)
+    visualize_flood_deprecated(earth, water)
 
 end

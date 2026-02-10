@@ -1,14 +1,15 @@
 include("../def_var.jl")
 include("create_heatmap.jl")
 
-function h_show(file_path)
+function h_show(file_path, step)
     print("$(E)Initializing visualization...")
 
-    map = tif2heatmap(file_path, 1)
+    map = tif2heatmap(file_path, step)
 
     print("$(E)Saving as png...")
-    savefig(map, "visualization/$(file_path[6:11])_heatmap.png")
+    savefig(map, "visualization/$(basename(splitext(file_path)[1]))_heatmap.png")
     print("$(E)Png saved!\n")
+    plot(map)
 end
 
 
@@ -20,5 +21,5 @@ if abspath(PROGRAM_FILE) == @__FILE__
     end
 
     file_path = ARGS[1]
-    h_show(file_path)
+    h_show(file_path, 3)
 end

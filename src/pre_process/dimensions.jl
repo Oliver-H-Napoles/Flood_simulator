@@ -1,7 +1,8 @@
-using Images
+using Images, Rasters
 
 function get_sample_dimensions(sample)
-    sample_matrix = Float64.(channelview(load(sample)))
+    println("getting sample")
+    sample_matrix = Float64.(load(sample))
     rows, cols = size(sample_matrix)
     return rows, cols
 end

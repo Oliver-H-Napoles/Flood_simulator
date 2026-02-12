@@ -1,7 +1,7 @@
 # Computational Physics: Rio de Janeiro Flood Simulation
 
 ## 1. Introduction
-The objective of this project was to develop a "Water Physics Engine" capable of simulating realistic flooding scenarios on complex terrains. Using the state of Rio de Janeiro as a case study, we processed high-resolution topographic data to model how water propagates through the landscape at varying elevation levels. The simulation provides both visual insights into flood-prone regions and quantitative data on the relationship between water level and total flooded area.
+The objective of this project was to develop a "Water Physics Engine" capable of simulating realistic flooding scenarios on complex terrains. Using the state of Rio de Janeiro as a case study, a high-resolution topographic data is processed to model how water propagates through the landscape at varying elevation levels. The simulation provides both visual insights into flood-prone regions and quantitative data on the relationship between water level and total flooded area.
 
 ## 2. Methodology & Physics Engine
 
@@ -26,7 +26,7 @@ The core simulation relies on a **recursive flood-fill algorithm** (modified Bre
 Given the short lifespan of the project, it's built fully based on crossed data from [TOPODATA](http://www.dsr.inpe.br/topodata/) and [IBGE - Bases cartográficas contínuas (Versão 2025)](https://www.ibge.gov.br/geociencias/downloads-geociencias.html?caminho=cartas_e_mapas/bases_cartograficas_continuas/bc250/versao2025/) as they are both national databases that seem to correlate well.
 
 ### 3.1 Treating **TOPODATA** data
-Using the .tif files from **TOPODATA** comes with a lack of metadata issue. In this project the coordenates are injected in the final map to align with the borders provided by **IBGE**. As we have a clear latitude and longitude coordinates described in both databases documentations (present in the `data/` directory) it's trivial to inject the CRF info into the Raster (once the concept in understood :3)
+Using the .tif files from **TOPODATA** comes with a lack of metadata issue. In this project the coordenates are injected in the final map to align with the borders provided by **IBGE**. As the latitude and longitude coordinates are clearly described in both databases documentations (present in the `data/` directory) it's trivial to inject the CRF info into the Raster (once the concept in understood :3)
 
 ## 4. System Architecture
 Though the project wasn't incorporated as a proper Julia Project, it tries to maintain a modular structure to better it's visualization.
@@ -86,7 +86,7 @@ $y = 9342.1 - ((x₁ * ((x₁ * ((sqrt(x₁) * -0.00029897) + 0.019368)) + -85.3
 ![Model Comarison: Rio Flood Curve](report_assets/model_comparison_raw.png)
 
 ## 6. Conclusion
-The developed program successfully translated raw geospatial data into a dynamic physical simulation. By treating the terrain as a connected graph of heights, we avoided the pitfalls of simple elevation thresholding and achieved a realistic model of hydraulic connectivity. The resulting mathematical models provide a predictive tool for estimating impacted areas at any given flood stage without the need to re-run the computationally expensive matrix simulation.
+The developed program successfully translated raw geospatial data into a dynamic physical simulation. By treating the terrain as a connected graph of heights, the pitfalls of simple elevation thresholding are avoided and achieved a realistic model of hydraulic connectivity. The resulting mathematical models provide a predictive tool for estimating impacted areas at any given flood stage without the need to re-run the computationally expensive matrix simulation.
 
 ## 7. Special requirements
 

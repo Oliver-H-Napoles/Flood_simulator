@@ -54,7 +54,7 @@ Natural coastline at 0% of flooded area
 
 500 meter flood at 70% of flooded area
 
-![500 meter flood](visualization/flood_direct_render500.png)
+![500 meter flood](report_assets/flood_direct_render500.png)
 
 ### 5.2 The Hypsometric Curve
 By running the simulation iteratively from 0m to 1500m (in 5m steps), a **Hypsometric Curve** is generated for the state. This curve plots **Water Level (m)** vs. **Flooded Area (%)**. The flooded area gets very close to 100% around 1400 meters, but the highest point in Rio De Janeiro would be around 2800 meters

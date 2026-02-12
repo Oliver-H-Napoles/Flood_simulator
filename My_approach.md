@@ -29,3 +29,13 @@ vou fazer a escolha arbitrária e deliberada de excluir tudo acima de bom jesus 
 olha só! aprendi a clausula do! ksksksks
 
 preciso consertar o blg dos diretórios. entender o uso de @__DIR_ _
+
+#### 10/02
+EU INUNDEI O RIO DE JANEIRO HAHAHAHA
+
+#### 11/02
+Acabei as simulações e construí a curva de inundação
+
+Não vai dar pra transformar isso em um Julia Project a tempo
+
+Espero não ter esquecido nada

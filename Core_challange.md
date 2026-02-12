@@ -1,4 +1,4 @@
-# Desafio Técnico PSR: Estudo de Impacto de Elevação do Nível do Mar
+# Desafio: Estudo de Impacto de Elevação do Nível do Mar
 
 A análise de riscos climáticos e geográficos é um componente estratégico fundamental para o setor de energia e
 infraestrutura. Este desafio consiste na realização de um estudo técnico quantitativo sobre o impacto da elevação do
@@ -33,15 +33,6 @@ específicos) e como essas informações foram integradas para o estudo do Estad
 
 ### Documentação e Apresentação
 
-- Apresentação de Resultados: Apresente suas metodologias e conclusões de forma clara e concisa em uma exposição para a
-equipe de recrutamento da PSR.
+- Apresentação de Resultados: Apresente suas metodologias e conclusões de forma clara e concisa em uma exposição
 - Entrega de Código: O código deve ser enviado para inspeção técnica. Não é necessário que ele seja entregue como um
 pacote executável, mas deve ser legível e refletir as decisões metodológicas descritas.
-
-## Observações Adicionais
-- Linguagem e Ferramentas: Você pode usar qualquer linguagem de programação e bibliotecas que considere apropriadas
-(ex: Python, Elixir, Rust, Julia, etc.).
-- Tomada de Decisão: Esteja preparado para discutir suas escolhas de modelagem e os desafios enfrentados. O foco da
-avaliação será o seu rigor técnico e as deliberações em suas tomadas de decisão durante o processo.
-- Comunicação: Você pode enviar e-mails com dúvidas sobre a tarefa para a equipe da PSR a qualquer momento.
-- Você poderá marcar uma reunião por vídeo de uma hora para tirar dúvidas e debater a sua solução.
